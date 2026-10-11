@@ -1,0 +1,99 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  event-ingestion:
+    build:
+      context: .
+      dockerfile: src/Services/EventIngestion/EventIngestion.Api/Dockerfile
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=event_ingestion;Username=postgres;Password=postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+
+  generator:
+    build:
+      context: .
+      dockerfile: src/EventGenerator/Dockerfile
+    environment:
+      INGESTION_API_URL: http://event-ingestion:8080
+      TARGET_RATE: "1000"
+    depends_on:
+      - event-ingestion
+
+  outbox-publisher:
+    build:
+      context: .
+      dockerfile: src/Services/OutboxPublisher/OutboxPublisher.Worker/Dockerfile
+    environment:
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=event_ingestion;Username=postgres;Password=postgres
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+
+  critical-alert:
+    build:
+      context: .
+      dockerfile: src/Services/CriticalAlert/CriticalAlert.Worker/Dockerfile
+    environment:
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=critical_alerts;Username=postgres;Password=postgres
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+
+  analytics:
+    build:
+      context: .
+      dockerfile: src/Services/Analytics/Analytics.Worker/Dockerfile
+    environment:
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=analytics;Username=postgres;Password=postgres
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+
+  notification:
+    build:
+      context: .
+      dockerfile: src/Services/Notification/Notification.Worker/Dockerfile
+    environment:
+      ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=notifications;Username=postgres;Password=postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres-data:

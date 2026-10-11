@@ -1,0 +1,11 @@
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\bin\Debug\net10.0\CriticalAlert.Application.deps.json
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\bin\Debug\net10.0\CriticalAlert.Application.dll
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\bin\Debug\net10.0\CriticalAlert.Application.pdb
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\obj\Debug\net10.0\CriticalAlert.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\obj\Debug\net10.0\CriticalAlert.Application.AssemblyInfoInputs.cache
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\obj\Debug\net10.0\CriticalAlert.Application.AssemblyInfo.cs
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\obj\Debug\net10.0\CriticalAlert.Application.csproj.CoreCompileInputs.cache
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\obj\Debug\net10.0\CriticalAlert.Application.dll
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\obj\Debug\net10.0\refint\CriticalAlert.Application.dll
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\obj\Debug\net10.0\CriticalAlert.Application.pdb
+E:\Wrokspace\Distributed-Events\src\Services\CriticalAlert\CriticalAlert.Application\obj\Debug\net10.0\ref\CriticalAlert.Application.dll

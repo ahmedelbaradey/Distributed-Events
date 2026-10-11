@@ -1,0 +1,46 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EventGenerator/EventGenerator.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Analytics/">
+    <Project Path="src/Services/Analytics/Analytics.Application/Analytics.Application.csproj" />
+    <Project Path="src/Services/Analytics/Analytics.Domain/Analytics.Domain.csproj" />
+    <Project Path="src/Services/Analytics/Analytics.Infrastructure/Analytics.Infrastructure.csproj" />
+    <Project Path="src/Services/Analytics/Analytics.Worker/Analytics.Worker.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/CriticalAlert/">
+    <Project Path="src/Services/CriticalAlert/CriticalAlert.Application/CriticalAlert.Application.csproj" />
+    <Project Path="src/Services/CriticalAlert/CriticalAlert.Domain/CriticalAlert.Domain.csproj" />
+    <Project Path="src/Services/CriticalAlert/CriticalAlert.Infrastructure/CriticalAlert.Infrastructure.csproj" />
+    <Project Path="src/Services/CriticalAlert/CriticalAlert.Worker/CriticalAlert.Worker.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/EventIngestion/">
+    <Project Path="src/Services/EventIngestion/EventIngestion.Api/EventIngestion.Api.csproj" />
+    <Project Path="src/Services/EventIngestion/EventIngestion.Application/EventIngestion.Application.csproj" />
+    <Project Path="src/Services/EventIngestion/EventIngestion.Domain/EventIngestion.Domain.csproj" />
+    <Project Path="src/Services/EventIngestion/EventIngestion.Infrastructure/EventIngestion.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Notification/">
+    <Project Path="src/Services/Notification/Notification.Application/Notification.Application.csproj" />
+    <Project Path="src/Services/Notification/Notification.Domain/Notification.Domain.csproj" />
+    <Project Path="src/Services/Notification/Notification.Infrastructure/Notification.Infrastructure.csproj" />
+    <Project Path="src/Services/Notification/Notification.Worker/Notification.Worker.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/OutboxPublisher/">
+    <Project Path="src/Services/OutboxPublisher/OutboxPublisher.Application/OutboxPublisher.Application.csproj" />
+    <Project Path="src/Services/OutboxPublisher/OutboxPublisher.Infrastructure/OutboxPublisher.Infrastructure.csproj" />
+    <Project Path="src/Services/OutboxPublisher/OutboxPublisher.Worker/OutboxPublisher.Worker.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/" />
+  <Folder Name="/src/Shared/Contracts/">
+    <Project Path="src/Shared/Contracts/Shared.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/Observability/">
+    <Project Path="src/Shared/Observability/Shared.Observability.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/IntegrationTests/IntegrationTests.csproj" />
+    <Project Path="tests/UnitTests/UnitTests.csproj" />
+  </Folder>
+</Solution>

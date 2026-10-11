@@ -1,0 +1,11 @@
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\bin\Debug\net10.0\Analytics.Infrastructure.deps.json
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\bin\Debug\net10.0\Analytics.Infrastructure.dll
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\bin\Debug\net10.0\Analytics.Infrastructure.pdb
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\obj\Debug\net10.0\Analytics.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\obj\Debug\net10.0\Analytics.Infrastructure.AssemblyInfoInputs.cache
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\obj\Debug\net10.0\Analytics.Infrastructure.AssemblyInfo.cs
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\obj\Debug\net10.0\Analytics.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\obj\Debug\net10.0\Analytics.Infrastructure.dll
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\obj\Debug\net10.0\refint\Analytics.Infrastructure.dll
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\obj\Debug\net10.0\Analytics.Infrastructure.pdb
+E:\Wrokspace\Distributed-Events\src\Services\Analytics\Analytics.Infrastructure\obj\Debug\net10.0\ref\Analytics.Infrastructure.dll

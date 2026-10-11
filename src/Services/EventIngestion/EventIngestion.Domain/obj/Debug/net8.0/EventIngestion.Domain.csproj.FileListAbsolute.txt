@@ -1,0 +1,15 @@
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\bin\Debug\net8.0\EventIngestion.Domain.deps.json
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\bin\Debug\net8.0\EventIngestion.Domain.dll
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\bin\Debug\net8.0\EventIngestion.Domain.pdb
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\bin\Debug\net8.0\Shared.Contracts.dll
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\bin\Debug\net8.0\Shared.Contracts.pdb
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\obj\Debug\net8.0\EventIngestion.Domain.csproj.AssemblyReference.cache
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\obj\Debug\net8.0\EventIngestion.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\obj\Debug\net8.0\EventIngestion.Domain.AssemblyInfoInputs.cache
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\obj\Debug\net8.0\EventIngestion.Domain.AssemblyInfo.cs
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\obj\Debug\net8.0\EventIngestion.Domain.csproj.CoreCompileInputs.cache
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\obj\Debug\net8.0\EventIng.F4A9208E.Up2Date
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\obj\Debug\net8.0\EventIngestion.Domain.dll
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\obj\Debug\net8.0\refint\EventIngestion.Domain.dll
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\obj\Debug\net8.0\EventIngestion.Domain.pdb
+E:\Wrokspace\Distributed-Events\src\Services\EventIngestion\EventIngestion.Domain\obj\Debug\net8.0\ref\EventIngestion.Domain.dll

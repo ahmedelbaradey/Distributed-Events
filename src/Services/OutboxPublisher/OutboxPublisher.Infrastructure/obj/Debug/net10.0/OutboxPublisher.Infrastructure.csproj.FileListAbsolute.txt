@@ -1,0 +1,11 @@
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\bin\Debug\net10.0\OutboxPublisher.Infrastructure.deps.json
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\bin\Debug\net10.0\OutboxPublisher.Infrastructure.dll
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\bin\Debug\net10.0\OutboxPublisher.Infrastructure.pdb
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\obj\Debug\net10.0\OutboxPublisher.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\obj\Debug\net10.0\OutboxPublisher.Infrastructure.AssemblyInfoInputs.cache
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\obj\Debug\net10.0\OutboxPublisher.Infrastructure.AssemblyInfo.cs
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\obj\Debug\net10.0\OutboxPublisher.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\obj\Debug\net10.0\OutboxPublisher.Infrastructure.dll
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\obj\Debug\net10.0\refint\OutboxPublisher.Infrastructure.dll
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\obj\Debug\net10.0\OutboxPublisher.Infrastructure.pdb
+E:\Wrokspace\Distributed-Events\src\Services\OutboxPublisher\OutboxPublisher.Infrastructure\obj\Debug\net10.0\ref\OutboxPublisher.Infrastructure.dll
