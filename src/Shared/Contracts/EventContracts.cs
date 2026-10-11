@@ -22,6 +22,7 @@ public enum EventRoute
 {
     Critical,
     Analytics,
+    Notification,
     Unspecified
 }
 
@@ -29,16 +30,32 @@ public static class EventRouting
 {
     public static string RouteKey(EventType eventType, Severity severity)
     {
-        return eventType is EventType.MalwareDetected or EventType.AuthenticationFailure || severity == Severity.Critical
-            ? QueueNames.AlertCriticalRoutingKey
-            : QueueNames.EventAnalyticsRoutingKey;
+        if (eventType is EventType.MalwareDetected or EventType.AuthenticationFailure || severity == Severity.Critical)
+        {
+            return QueueNames.AlertCriticalRoutingKey;
+        }
+
+        if (eventType is EventType.SystemHealth or EventType.AuditTrail)
+        {
+            return QueueNames.NotificationRoutingKey;
+        }
+
+        return QueueNames.EventAnalyticsRoutingKey;
     }
 
     public static EventRoute Route(EventType eventType, Severity severity)
     {
-        return eventType is EventType.MalwareDetected or EventType.AuthenticationFailure || severity == Severity.Critical
-            ? EventRoute.Critical
-            : EventRoute.Analytics;
+        if (eventType is EventType.MalwareDetected or EventType.AuthenticationFailure || severity == Severity.Critical)
+        {
+            return EventRoute.Critical;
+        }
+
+        if (eventType is EventType.SystemHealth or EventType.AuditTrail)
+        {
+            return EventRoute.Notification;
+        }
+
+        return EventRoute.Analytics;
     }
 }
 
@@ -101,8 +118,14 @@ public static class QueueNames
     public const string ExchangeName = "camera-events";
     public const string CriticalAlertsQueue = "critical-alerts";
     public const string AnalyticsQueue = "analytics-events";
+    public const string NotificationQueue = "notification-events";
     public const string CriticalAlertsDlq = "critical-alerts-dlq";
     public const string AnalyticsDlq = "analytics-events-dlq";
+    public const string NotificationDlq = "notification-events-dlq";
     public const string AlertCriticalRoutingKey = "alert.critical";
     public const string EventAnalyticsRoutingKey = "event.analytics";
+    public const string NotificationRoutingKey = "event.notification";
+    public const string AlertCriticalDlqRoutingKey = "alert.critical.dlq";
+    public const string EventAnalyticsDlqRoutingKey = "event.analytics.dlq";
+    public const string NotificationDlqRoutingKey = "event.notification.dlq";
 }

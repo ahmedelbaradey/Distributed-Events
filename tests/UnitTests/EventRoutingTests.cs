@@ -17,9 +17,18 @@ public class EventRoutingTests
     [Fact]
     public void AnalyticsEvent_ShouldRouteToAnalyticsQueue()
     {
-        var route = EventRouting.Route(EventType.AuditTrail, Severity.Low);
+        var route = EventRouting.Route(EventType.AccessDenied, Severity.Medium);
 
         Assert.Equal(EventRoute.Analytics, route);
-        Assert.Equal(QueueNames.EventAnalyticsRoutingKey, EventRouting.RouteKey(EventType.AuditTrail, Severity.Low));
+        Assert.Equal(QueueNames.EventAnalyticsRoutingKey, EventRouting.RouteKey(EventType.AccessDenied, Severity.Medium));
+    }
+
+    [Fact]
+    public void SystemHealth_ShouldRouteToNotificationQueue()
+    {
+        var route = EventRouting.Route(EventType.SystemHealth, Severity.Low);
+
+        Assert.Equal(EventRoute.Notification, route);
+        Assert.Equal(QueueNames.NotificationRoutingKey, EventRouting.RouteKey(EventType.SystemHealth, Severity.Low));
     }
 }
