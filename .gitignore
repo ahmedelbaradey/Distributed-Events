@@ -1,0 +1,31 @@
+﻿# Build outputs
+**/bin/
+**/obj/
+**/TestResults/
+
+# Visual Studio / IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# NuGet packages folder (if used locally)
+packages/
+
+# Temporary files
+*.tmp
+*.bak
